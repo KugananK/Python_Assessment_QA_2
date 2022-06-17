@@ -32,7 +32,11 @@ import random
 
 
 def one(string):
-    return
+    result = ""
+    for char in string:
+        result += char*3
+    return result
+
 
     # <QUESTION 2>
 
@@ -51,7 +55,15 @@ def one(string):
 
 
 def two(num):
-    return
+    # if (num % 1 == 0) and (num % num == 0):
+    #     return True
+    # else:
+    #     return False
+    for  x in range(2, num):
+        if(num % x == 0):
+            return False
+    return True
+
 
     # <QUESTION 3>
 
@@ -69,7 +81,11 @@ def two(num):
 
 
 def three(a):
-    return
+    result = 0
+    for i in range(1,5):
+        result += int(str(a) * i)
+        i += 1
+    return result
 
     # <QUESTION 4>
 
@@ -99,8 +115,10 @@ def three(a):
 
 
 def four(string1, string2):
-    return
-
+    result = ''
+    for i in range(len(string1)):
+        result += string1[i] + string2[i]
+    return result
     # <QUESTION 5>
 
     # Write a function to randomly generate a list with 5 even numbers between 100 and 200 inclusive.
@@ -115,9 +133,25 @@ def four(string1, string2):
     # There is a module which can be used to generate random numbers, this module is called random.
     # The random module contains a function called randint.
 
-
 def five():
-    return
+    ranlist = []
+    for i in range(5):
+        i += 1
+        ranlist.append(random.randrange(100,201,2))
+    return ranlist
+    # ranlist = []
+    # rannum = random.randint(99,201) 
+    # for i in range(1,5):
+    #     if rannum % 2 == 0:
+    #         ranlist.append(rannum)
+    #     else:
+    #         continue
+    # return ranlist
+
+    # for i in range(1,5):
+    #     i += 1
+    # list.append random range(100,201,2)
+
 
     # <QUESTION 6>
 
@@ -137,7 +171,11 @@ def five():
 
 
 def six(string):
-    return
+    strL = string.lower()
+    if strL[-2:] == "py":
+        return True
+    else:
+        return False
 
     # <QUESTION 7>
 
@@ -162,7 +200,12 @@ def six(string):
 
 
 def seven(a, b, c):
-    return
+    sortlist = [a, b, c]
+    sortedlist = sorted(sortlist)
+    if sortedlist[-3] - sortedlist[-2] == sortedlist[-2] - sortedlist[-1]:
+        return True
+    else:
+        return False
 
     # <QUESTION 8>
 
