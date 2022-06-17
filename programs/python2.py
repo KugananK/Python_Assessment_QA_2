@@ -148,9 +148,6 @@ def five():
     #         continue
     # return ranlist
 
-    # for i in range(1,5):
-    #     i += 1
-    # list.append random range(100,201,2)
 
 
     # <QUESTION 6>
@@ -240,9 +237,11 @@ def eight(string, num):
     # <HINT>
     # There are no hints for this question.
 
+    # make sure string1 is the shortest of the two
 
 def nine(string1, string2):
-    # make sure string1 is the shortest of the two
+    if len(string1) > len(string2):
+
     return
 
     # <QUESTION 10>
