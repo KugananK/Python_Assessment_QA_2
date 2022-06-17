@@ -240,9 +240,9 @@ def eight(string, num):
     # make sure string1 is the shortest of the two
 
 def nine(string1, string2):
-    if len(string1) > len(string2):
-
-    return
+    if len(string1) <= len(string2):
+        for i in range(len(string1))
+    return False
 
     # <QUESTION 10>
 
